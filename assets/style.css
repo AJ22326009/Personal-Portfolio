@@ -2,14 +2,19 @@ body{
     margin: 0;
     color: #112D4E;
     background-color:floralwhite;
+    font-family: Arial, Helvetica, sans-serif; /* default font family*/
+    font-size: 1.3rem;
 }
 
 .header{
     position: sticky;
     top: 0;
-    background-color: #DBE2EF;
-    margin: 0;
     border-bottom: 3px solid #3F72AF;
+    margin: 0;
+}
+
+.header, .footer{
+    background-color: #DBE2EF;
 }
 
 .navigation{
@@ -28,15 +33,30 @@ body{
     font-size: 1.5rem;
     transition: transform 0.3s ease;
     color: #112D4E;
+    padding: 0.5rem;
 }
 
 .navlink:hover{
-    font-weight: bold;
+    /* font-weight: bold; */
+    color: #DBE2EF;
+    background-color: #112D4E;
     transform: translateY(-6px);
 }
 
+.footer{
+    border-top: 3px solid #3F72AF;
+    text-align: center;
+    height: 140px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+.footer-img{
+    width: 6rem;
+}
+/*Styles For home page */
 .welcome{
-    background-image: url('./web-development.png');
+    background-image: url('./web-development1.png');
     background-size:cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -46,19 +66,21 @@ body{
     align-items: center;
     justify-content: center;
     border-bottom: 2px solid #3F72AF;
+    color:cadetblue;
 }
 
 .welcome-message{
-    font-family: Arial, Helvetica, sans-serif;
     font-weight: bold;
     font-size: 4rem;
-    margin-bottom: 0;
+    margin-bottom: 2vh;
+    padding-left: 3rem;
 }
 
 .comment{
-    margin-top: 0;
+    margin-top: 2vh;
     font-size: 2rem;
     font-family: cursive;
+    padding-left: 3rem;
 }
 
 .intro{
@@ -76,14 +98,120 @@ body{
     width: 40%;
 }
 
-.intro-img{
+.image{
     width: 20rem;
     border: 3px solid #3F72AF;
     border-radius: 20px;
 }
 
+.me{
+    font-weight: bold;
+}
+
+
+/* style specific for about page */
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    gap: 4rem;
+}
+
+.container{
+    width: 60%;
+}
+
+.section{
+    text-align: center;
+}
+
+.skills{
+    width: auto;
+}
+
+.secHeading{
+    color: cadetblue;
+    border-bottom: 3px solid cadetblue;
+}
+
+.s-list{
+    text-align: left;
+}
+
+/* styles specific to projects page */
+.p-image{
+    height: 300px;
+    border: 3px solid #3F72AF;
+}
+
+.p-main{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin: 3rem;
+    gap: 3rem;
+}
+
+.p-name{
+    color: cadetblue;
+    border-bottom: 3px solid cadetblue;
+}
+
+.p-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.9rem;
+    width: 20rem;
+    text-align: center;
+    border: 3px solid #3F72AF;
+    border-radius: 10px;
+    background-color: #DBE2EF;
+    padding-bottom: 1rem;
+}
+
+/* styles specific to contact page */
+.message-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1.5rem;
+    flex-wrap: wrap;
+    color: cadetblue;
+    font-weight: bold;
+    background-image: url('../assets/achieve-dream.png');
+    background-size: contain;
+    background-repeat:repeat;
+    background-position: center;
+    gap: 1rem;
+}
+
+.message{
+    padding: 0.3rem;
+    background-color: floralwhite;
+    border-radius: 0.6rem;
+    border: 3px solid #3F72AF;
+}
+.comment2{
+    font-family: cursive;
+    font-size: 1.5rem;
+    background-color: floralwhite;
+}
+
+.connect{
+    margin-top: 0;
+    font-size: 2.5rem;
+    background-color: floralwhite;
+}
+
 @media (max-width: 867px) {
-    .brief{
+    .brief, .section, .container{
         width: auto;
+    }
+
+    .navlink{
+        font-size: 3.5vw;
     }
 }
