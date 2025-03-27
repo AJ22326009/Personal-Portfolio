@@ -1,0 +1,89 @@
+body{
+    margin: 0;
+    color: #112D4E;
+    background-color:floralwhite;
+}
+
+.header{
+    position: sticky;
+    top: 0;
+    background-color: #DBE2EF;
+    margin: 0;
+    border-bottom: 3px solid #3F72AF;
+}
+
+.navigation{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.navImg{
+    width: 3rem;
+    padding: 0.5rem;
+}
+
+.navlink{
+    text-decoration: none;
+    font-size: 1.5rem;
+    transition: transform 0.3s ease;
+    color: #112D4E;
+}
+
+.navlink:hover{
+    font-weight: bold;
+    transform: translateY(-6px);
+}
+
+.welcome{
+    background-image: url('./web-development.png');
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 2px solid #3F72AF;
+}
+
+.welcome-message{
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    font-size: 4rem;
+    margin-bottom: 0;
+}
+
+.comment{
+    margin-top: 0;
+    font-size: 2rem;
+    font-family: cursive;
+}
+
+.intro{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 4rem;
+    padding: 2rem 0;
+    flex-wrap: wrap;
+}
+
+.brief{
+    font-size: 2rem;
+    font-family: cursive;
+    width: 40%;
+}
+
+.intro-img{
+    width: 20rem;
+    border: 3px solid #3F72AF;
+    border-radius: 20px;
+}
+
+@media (max-width: 867px) {
+    .brief{
+        width: auto;
+    }
+}
