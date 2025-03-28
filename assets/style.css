@@ -1,3 +1,4 @@
+/* General Styles */
 body{
     margin: 0;
     color: #112D4E;
@@ -17,12 +18,6 @@ body{
     background-color: #DBE2EF;
 }
 
-.navigation{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-}
-
 .navImg{
     width: 3rem;
     padding: 0.5rem;
@@ -30,14 +25,12 @@ body{
 
 .navlink{
     text-decoration: none;
-    font-size: 1.5rem;
     transition: transform 0.3s ease;
     color: #112D4E;
     padding: 0.5rem;
 }
 
 .navlink:hover{
-    /* font-weight: bold; */
     color: #DBE2EF;
     background-color: #112D4E;
     transform: translateY(-6px);
@@ -54,52 +47,57 @@ body{
 .footer-img{
     width: 6rem;
 }
-/*Styles For home page */
-.welcome{
-    background-image: url('./web-development1.png');
-    background-size:cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    height: 100vh;
+
+.row-flex{
     display: flex;
-    flex-direction: column;
+    justify-content: space-evenly;
     align-items: center;
-    justify-content: center;
-    border-bottom: 2px solid #3F72AF;
-    color:cadetblue;
+    flex-wrap: wrap;
 }
 
-.welcome-message{
+.link{
+    color: floralwhite;
+}
+
+.link:hover{
     font-weight: bold;
-    font-size: 4rem;
-    margin-bottom: 2vh;
+}
+/*Styles specific to home page */
+.welcome{
+    background-image: url('./web-development.png');
+    flex-direction: column;
+    justify-content: center;
+    color: brown;
     padding-left: 3rem;
+}
+
+
+.welcome-message{
+    font-size: 4rem;
+    border-bottom: 4px solid brown;
+    margin-bottom: 0;
 }
 
 .comment{
-    margin-top: 2vh;
+    margin-top: 0;
     font-size: 2rem;
     font-family: cursive;
-    padding-left: 3rem;
 }
 
 .intro{
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0 4rem;
     padding: 2rem 0;
-    flex-wrap: wrap;
 }
 
 .brief{
     font-size: 2rem;
     font-family: cursive;
     width: 40%;
+    padding-left: 1rem;
 }
 
 .image{
-    width: 20rem;
+    width: 80vw;
+    max-width: 20rem;
     border: 3px solid #3F72AF;
     border-radius: 20px;
 }
@@ -108,13 +106,8 @@ body{
     font-weight: bold;
 }
 
-
 /* style specific for about page */
 .main{
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
     gap: 4rem;
 }
 
@@ -126,10 +119,6 @@ body{
     text-align: center;
 }
 
-.skills{
-    width: auto;
-}
-
 .secHeading{
     color: cadetblue;
     border-bottom: 3px solid cadetblue;
@@ -139,6 +128,10 @@ body{
     text-align: left;
 }
 
+.list-container{
+    padding-left: 15rem;
+}
+
 /* styles specific to projects page */
 .p-image{
     height: 300px;
@@ -146,72 +139,97 @@ body{
 }
 
 .p-main{
-    display: flex;
-    justify-content: space-evenly;
-    flex-wrap: wrap;
     margin: 3rem;
     gap: 3rem;
 }
 
 .p-name{
-    color: cadetblue;
-    border-bottom: 3px solid cadetblue;
+    border-bottom: 3px solid #112D4E;
 }
 
 .p-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
     font-size: 0.9rem;
     width: 20rem;
     text-align: center;
     border: 3px solid #3F72AF;
     border-radius: 10px;
-    background-color: #DBE2EF;
+    background-color: cadetblue;
     padding-bottom: 1rem;
 }
 
 /* styles specific to contact page */
 .message-container{
-    display: flex;
-    align-items: center;
     justify-content: space-around;
     padding: 1.5rem;
     flex-wrap: wrap;
-    color: cadetblue;
-    font-weight: bold;
     background-image: url('../assets/achieve-dream.png');
-    background-size: contain;
-    background-repeat:repeat;
-    background-position: center;
     gap: 1rem;
 }
 
-.message{
-    padding: 0.3rem;
-    background-color: floralwhite;
-    border-radius: 0.6rem;
-    border: 3px solid #3F72AF;
-}
 .comment2{
     font-family: cursive;
-    font-size: 1.5rem;
-    background-color: floralwhite;
+    font-size: 2rem;
+    background-color: #3F72AF;
 }
 
 .connect{
     margin-top: 0;
-    font-size: 2.5rem;
-    background-color: floralwhite;
+    font-size: 4rem;
 }
 
+.message{
+    color: rgb(173, 240, 91);
+    padding: 0.3rem;
+    border-radius: 1rem;
+    font-weight: bold;
+}
+
+.contacts{
+    gap: 3rem;
+    padding: 3rem;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 10rem;
+    background-color: cadetblue;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    border: 3px solid #3F72AF;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+}
+
+.c-logo{
+    width: 60%;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+/* common to both home & contacts */
+.welcome, .message-container{
+    background-size: contain;
+    background-repeat:repeat;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    border-bottom: 2px solid #3F72AF;
+    font-weight: bold;
+}
+
+
 @media (max-width: 867px) {
-    .brief, .section, .container{
+    .brief, .container{
         width: auto;
     }
 
     .navlink{
         font-size: 3.5vw;
+    }
+
+    .list-container{
+        padding-left: 10rem;
     }
 }
