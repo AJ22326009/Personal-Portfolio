@@ -83,7 +83,6 @@ body{
 .comment{
     margin-top: 0;
     font-size: 2rem;
-    font-family: cursive;
 }
 
 .intro{
@@ -92,7 +91,6 @@ body{
 
 .brief{
     font-size: 2rem;
-    font-family: cursive;
     width: 40%;
     padding-left: 1rem;
 }
@@ -131,7 +129,7 @@ body{
 }
 
 .list-container{
-    padding-left: 15rem;
+    padding-left: 20vw;
 }
 
 /* styles specific to projects page */
@@ -169,7 +167,6 @@ body{
 }
 
 .comment2{
-    font-family: cursive;
     font-size: 2rem;
     background-color: #3F72AF;
 }
@@ -229,9 +226,5 @@ body{
 
     .navlink{
         font-size: 3.5vw;
-    }
-
-    .list-container{
-        padding-left: 10rem;
     }
 }
