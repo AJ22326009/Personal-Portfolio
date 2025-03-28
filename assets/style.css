@@ -62,6 +62,8 @@ body{
 .link:hover{
     font-weight: bold;
 }
+
+
 /*Styles specific to home page */
 .welcome{
     background-image: url('./web-development.png');
